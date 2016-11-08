@@ -60,7 +60,7 @@ return [
 //            'username' => env('DB_USERNAME', 'forge'),
 //            'password' => env('DB_PASSWORD', ''),
             'host'      => '127.0.0.1:3306',
-            'database'  => 'wks',
+            'database'  => 'riskmanage',
             'username'  => 'root',
             'password'  => '',
             'charset' => 'utf8',
