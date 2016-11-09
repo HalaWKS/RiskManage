@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +26,20 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+//Route::group(['middleware' => ['web']], function () {
+//    //
+//});
+
+Route::get('/login', 'LoginController@getLogin');
+
+Route::post('/login', 'LoginController@postLogin');
+
+Route::get('/logout', 'RegisterController@getLogout');
+
+Route::get('/register', 'RegisterController@getRegister');
+
+Route::post('/register', 'RegisterController@postRegister');
+
+Route::get('/home', function () {
+    return view('welcome');
 });
